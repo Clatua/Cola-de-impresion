@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/csc.css">
+    <title>Control de Rutas</title>
+</head>
+<body>
+    <aside>
+        <center>
+    <h1>RUTA DE TRANSPORTE</h1>
+
+    <form>
+        <label for="IntroNumero">
+            NUMERO DE RUTA: <input type="number" id="IntroNumero" class="form-control">
+        </label><br>
+        <label for="IntroNombre">
+            BASE: <input type="text" id="IntroBase" class="form-control">
+        </label><br>
+        <label for="IntroMinutos">
+            MINUTOS: <input type="number" id="IntroMinutos" class="form-control">
+        </label>
+    </form>
+
+        <button type="button" id="btnNuevo" class="btn_verde">Agregar   </button>
+        <button type="button" id="btnBuscar" class="btn_verde">Buscar</button>
+        <button type="button" id="btnEliminar" class="btn_verde">Eliminar</button>
+        <button type='button' id='btnImprimir' class="btn_verde">Imprimir</button>
+        <button type="reset" class="btn_verde">Cancelar</button><br><br>
+
+        <div id="resultado1" > <h2>MOSTRAR RUTA</h2></div>
+    </center>
+    </aside>
+    <main>
+        <center>
+    <h1>TARJETA DE TRABAJO</h1>
+    
+    
+    <form> 
+        <label for="IntroBaseInicio">
+            BASE DE INICIO: <input type="text" id="IntroBaseInicio" class="form-control">
+        </label><br>
+        <label for="IntroHoraInicio">
+            TIEMPO DE INICIO: 
+            Hrs.<input type="text" id="IntroHoraInicio" class="form-control">
+            Min.<input type="text" id="IntroMinutoInicio" class="form-control">
+        </label><br>
+        <label for="IntroHorasSalida">
+            TIEMPO DE SALIDA: 
+            Hrs.<input type="text" id="IntroHoraSalida" class="form-control">
+            Min.<input type="text" id="IntroMinutoSalida" class="form-control">
+        </label>
+    </form>
+
+    <button type='button' id='btnMostrar' class="btn_verde">Mostrar</button>
+
+    <div id="resultado2" > <h2>MOSTRAR TARJETA DE TRABAJO</h2></div>
+    </center>
+</main>
+
+    <script src='Js/app.js'></script>
+</body>
+</html>
